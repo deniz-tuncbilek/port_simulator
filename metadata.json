@@ -1,0 +1,5 @@
+{
+  "name": "Port Operations Simulator",
+  "description": "Interactive dashboard for simulating port container flows and forecasting yard capacity over a 14-day horizon.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-flow-right: flow-right linear infinite;
+  --animate-flow-left: flow-left linear infinite;
+  --animate-flow-down: flow-down linear infinite;
+  --animate-flow-up: flow-up linear infinite;
+
+  @keyframes flow-right {
+    0% { left: -100%; }
+    100% { left: 100%; }
+  }
+  @keyframes flow-left {
+    0% { left: 100%; }
+    100% { left: -100%; }
+  }
+  @keyframes flow-down {
+    0% { top: -100%; }
+    100% { top: 100%; }
+  }
+  @keyframes flow-up {
+    0% { top: 100%; }
+    100% { top: -100%; }
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 20px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background-color: #94a3b8;
+  }
+}
